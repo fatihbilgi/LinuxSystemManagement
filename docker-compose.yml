@@ -17,3 +17,13 @@ services:
     image: certbot/certbot
     ports:
       - 443:80
+      
+  wordpress:
+    container_name: wordpress
+    image: wordpress
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_USER: fatihbilgi
+      WORDPRESS_DB_PASSWORD: 30718050
+      WORDPRESS_DB_NAME: db_name
