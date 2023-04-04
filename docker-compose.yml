@@ -1,1 +1,6 @@
 version '3'
+services:
+  mariadb:
+  image: mariadb
+  environment:
+   - MYSQL_PASSWORD=30718050
