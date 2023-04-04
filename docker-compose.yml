@@ -12,3 +12,8 @@ services:
     ports:
       - 80:80
    
+ certbot:
+    container_name: certbot
+    image: certbot/certbot
+    ports:
+      - 443:80
