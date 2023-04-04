@@ -1,6 +1,14 @@
 version '3'
 services:
   mariadb:
-  image: mariadb
-  environment:
-   - MYSQL_PASSWORD=30718050
+    image: mariadb
+    environment:
+    - MYSQL_PASSWORD=30718050
+   
+  nginx:
+    container_name: nginx
+    image: nginx
+    restart: unless-stopped
+    ports:
+    - 80:80
+   
